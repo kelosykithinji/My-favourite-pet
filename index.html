@@ -42,12 +42,25 @@
             color: #FF7845;
             font-weight: 500;
         }
+        .logo{
+            font-size: 24px;
+        }
         .header-button{
             background: #FF7845;
             color:white;
             padding:15px 20px;
-          
             margin-left: 150px;
+            position:relative;
+            top:-20px;
+            box-shadow: 2px 2px 1px 1px rgb(4, 7, 78) ;
+            border:1px solid #0E1054;
+            cursor:pointer;
+            transition:all 200ms ease-in-out;
+        }
+        .heade-button:hover{
+           background: white; 
+           color:black;
+           
         }
         .main-content{
             display:flex;
@@ -56,15 +69,24 @@
         .second-button{
             background:#FFFFFF ;
             padding:15px 20px;
-            border-color: #0E1054;
+            
             font-size: 16px;
+            box-shadow: 3px 3px 1px 1px rgb(9, 8, 75);
+            border:1px solid #0E1054;
+            cursor:pointer;
+            transition:all 200ms ease-in-out;
         }
-       img{
-        width: 300px;
-       }
+        .second-button:hover{
+            color:black;
+            background: white;
+        }
         .first-image{
             margin-top: 50px;
-            width: 300px;
+            position:relative;
+           top:40px;
+           right:20px
+           
+             
         }
         .second-images{
             gap:10px;
@@ -128,7 +150,7 @@
                 <div class="logo">🐾Pet<span class="logos">Care</span></div>
                 <div class="hero">
                     <ul>
-                    <li><span class="first-li">Home</span></li>
+                    <li><span class="first-li"><a href="https://dribbble.com/shots/19033753-Pet-Care-Web-Header#" target="_blank">Home</a></span></li>
                     <li><span class="second-li">Services</span></li>
                     <li><span class="second-li">Training</span></li>
                     <li><span class="second-li">Blog</span></li>
@@ -150,7 +172,7 @@
                         <button class="second-button">Book a Schedule </button>
                     </div>
                     <div class="first-image">
-                        <img src="https://media.istockphoto.com/id/1944476521/photo/portrait-of-a-pretty-blue-merle-australian-shepherd-dog-looking-straigth-at-the-camera-with.jpg?b=1&s=612x612&w=0&k=20&c=LNDdtNTZvT3ehzcbg44TeRM-xlcmgrPa3Nl7tBue2YQ=" alt="cat and dog">
+                        <img src="https://media.istockphoto.com/id/1944476521/photo/portrait-of-a-pretty-blue-merle-australian-shepherd-dog-looking-straigth-at-the-camera-with.jpg?b=1&s=612x612&w=0&k=20&c=LNDdtNTZvT3ehzcbg44TeRM-xlcmgrPa3Nl7tBue2YQ="  width="350px" alt="cat and dog" class="dog-cat">
                     </div>
                 </div>
             </main>
