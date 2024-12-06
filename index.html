@@ -3,41 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+        body{
+            background: #FFC8B0;
+            font-family: "Roboto", serif;
+            font-weight: 300;
+        }
+        .header{
+            display:flex;
+            justify-content: space-between;
+        }
+        .hero{
+            display:flex;
+            justify-content: space-between;
+        }
+        .container{
+            margin:20px auto;
+            
+            border:2px solid #1A1A23;
+            width:900px;
+        }
+        .container-1{
+            background:#FFF5ED ;
+            padding:40px;
+        }
+        .container-2{
+            background:#1A1A23;
+            display:flex;
+            color:white;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .logos{
+            color: #FF7845;
+            font-weight: 500;
+        }
+        .header-button{
+            background: #FF7845;
+            color:white;
+            padding:15px 20px;
+          
+            margin-left: 150px;
+        }
+        .main-content{
+            display:flex;
+            justify-content: space-between;
+        }
+        .second-button{
+            background:#FFFFFF ;
+            padding:15px 20px;
+            border-color: #0E1054;
+            font-size: 16px;
+        }
+       img{
+        width: 300px;
+       }
+        .first-image{
+            margin-top: 50px;
+            width: 300px;
+        }
+        .second-images{
+            gap:10px;
+            margin-left:30px;
+            margin-top: 30px;
+        }
+        .second-image{
+           width:100px;
+            border:5px solid white;
+            gap:10px;
+        }
+        .second-image-1{
+            width:100px;
+            border:5px solid white;
+            margin-left: 10px;
+            position:relative;
+            top:25px;
+        }
+        ul{
+            text-decoration: none;
+            display: flex;
+            gap: 20px;
+            margin: 0 auto;
+        }
+        li{
+            list-style: none;
+           
+        }
+        h2{
+           
+            font-size: 40px;
+        }
+        h1{
+            font-size: 48px;
+            color:#050B59;
+        }
+        .first-para{
+            line-height: 1.5;
+            color:#77778B;
+        }
+        .second-para{
+            line-height: 1.5;
+            color:#7A7A84;
+        }
+        .first-li{
+            color:#020856;
+            font-weight: 500px;
+        }
+        .second-li{
+            color:#B3B1B8;
+        }
+        .last-content{
+            margin-right:20px;
+        }
+    </style>
 </head>
 <body>
-   
-    <div>🐾PetCare</div>
-    <div>
-        <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Training</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        </ul>
-        <button> Register</button>
-    </div>
-    <main>
-        <div>
-             <h1>Taking 🐩Care <br>
-                of Your Litle<br>
-                 Friends🌟
-                </h1>
-             <p>Our higly skilled professional associates love<br>
-                 pets as much as you do , and we offer a wide<br>
-                  range of pet services</p>
-             <button>Book a Schedule </button>
+    <div class="container">
+        <div class="container-1">
+            <div class="header">
+                <div class="logo">🐾Pet<span class="logos">Care</span></div>
+                <div class="hero">
+                    <ul>
+                    <li><span class="first-li">Home</span></li>
+                    <li><span class="second-li">Services</span></li>
+                    <li><span class="second-li">Training</span></li>
+                    <li><span class="second-li">Blog</span></li>
+                    <li><span class="second-li">Contact</span></li>
+                    </ul>
+                    <button class="header-button"> Register</button>
+                </div>
+            </div>
+            <main>
+                <div class="main-content">
+                    <div>
+                        <h1>Taking 🐩Care <br>
+                            of Your Litle<br>
+                            Friends🌟
+                            </h1>
+                        <p class="first-para">Our higly skilled professional associates love<br>
+                            pets as much as you do , and we offer a wide<br>
+                            range of pet services.</p>
+                        <button class="second-button">Book a Schedule </button>
+                    </div>
+                    <div class="first-image">
+                        <img src="https://media.istockphoto.com/id/1944476521/photo/portrait-of-a-pretty-blue-merle-australian-shepherd-dog-looking-straigth-at-the-camera-with.jpg?b=1&s=612x612&w=0&k=20&c=LNDdtNTZvT3ehzcbg44TeRM-xlcmgrPa3Nl7tBue2YQ=" alt="cat and dog">
+                    </div>
+                </div>
+            </main>
         </div>
-    </main>
-    <footer>
-        <img src="https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat">
-        <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="dog">
-        <h2>Welcome To Pet Care Center</h2>
-        <p>Grooming $ Supply provides grooming services for all dog and cat<br>
-        breeds. We are fully committed to the health and hygiene of your<br>
-        furry best friends. We offer free estimates and consultations to help.
-    </p>
-    </footer>
+        <div class="container-2">
+                <div class="second-images">
+                    <img src="https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat" class="second-image">
+                    <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="dog" class="second-image-1">
+                </div>
+                <div class="last-content">
+                    <h2>Welcome To <br>Pet Care Center</h2>
+                    <p class="second-para">Grooming $ Supply provides grooming services for all dog and cat<br>
+                    breeds. We are fully committed to the health and hygiene of your<br>
+                    furry best friends. We offer free estimates and consultations to help.
+                    </p>
+                </div>           
+        </div>
+    </div>
 </body>
 </html>
